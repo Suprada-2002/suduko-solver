@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg-light: rgb(192, 214, 192);
+  --bg-dark: rgb(24, 18, 18);
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: white;
+}
+
+header {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 4px solid pink;
+}
+
+header #setup-game {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #setup-game > * {
+  margin-bottom: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header button {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body .hidden {
+  display: none;
+}
+
+body p#timer,
+body p#lives {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+body #game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #game #number-container > p {
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  font-size: 20pt;
+  margin: 2rem;
+  text-align: center;
+}
+
+body #game #board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 600px;
+  height: 600px;
+}
+
+body .tile {
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin: 0px;
+  vertical-align: middle;
+  font-size: 40pt;
+}
+
+body p.selected {
+  background-color: lightblue;
+}
+
+body p.incorrect {
+  color: red;
+}
+
+body .rightBorder {
+  border-right: 4px solid black;
+}
+
+body .bottomBorder {
+  border-bottom: 4px solid black;
+}
+
+footer {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  background-color: pink;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
